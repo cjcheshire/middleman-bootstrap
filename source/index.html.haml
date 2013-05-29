@@ -1,0 +1,18 @@
+- content_for :page_title do
+  App title goes here
+/ = partial "splash"
+
+
+%form(action="#")
+  %fieldset
+    %legend Login...
+    %div
+      %label(for="textinput") Email
+      %input#textinput.field.medium(type="text")
+        / %em Note about this field
+    %div
+      %label(for="textinputsmall") Password
+      %input#textinputsmall.field.medium(type="text")
+        / %em Note about this field
+    .submit
+      %input(type="submit" value="Login")

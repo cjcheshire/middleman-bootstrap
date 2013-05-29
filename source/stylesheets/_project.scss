@@ -1,0 +1,21 @@
+$height_nav: 50px;
+
+body {
+  margin-top: $height_nav*2;
+  @include respond-max(em(480px)) {
+    padding-left: em(16px);
+    padding-right: em(16px);
+  }
+  @include respond-min(em(480px)) {
+    padding-left: em(32px);
+    padding-right: em(32px);
+  }
+}
+
+.container {
+  position: relative;
+  @include respond-min($desktop) {
+    margin: 0 auto;
+    max-width: em(960px);
+  }
+}
